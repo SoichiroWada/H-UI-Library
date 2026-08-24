@@ -3,7 +3,6 @@ import Tooltip from './ninja-ui/tooltip';
 // create tooltips
 const tooltips = document.querySelectorAll('.tooltip');
 console.log(tooltips);
-console.log(document.querySelectorAll('.tooltip')[0])
 
 tooltips.forEach((tip) => {
     console.log(tip)
