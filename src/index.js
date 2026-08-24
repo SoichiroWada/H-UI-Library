@@ -5,16 +5,18 @@ const tooltips = document.querySelectorAll('.tooltip');
 console.log(tooltips);
 console.log(document.querySelectorAll('.tooltip')[0])
 
-//Find the number of tooltips
-const numberOfToolTips = document.querySelectorAll('.tooltip').length
-console.log(numberOfToolTips)
+tooltips.forEach((tip) => {
+    console.log(tip)
+    const tooltip = new Tooltip(tip)
+    tooltip.init();
+})
 
-const tooltip1 = new Tooltip(document.querySelectorAll('.tooltip')[0]);
-tooltip1.init();
+// //Find the number of tooltips
+// const numberOfToolTips = document.querySelectorAll('.tooltip').length
+// console.log(numberOfToolTips)
 
-const tooltip2 = new Tooltip(document.querySelectorAll('.tooltip')[1]);
-tooltip2.init();
-
-const tooltip3 = new Tooltip(document.querySelectorAll('.tooltip')[2]);
-tooltip3.init();
+// for (let i = 0; i<numberOfToolTips; i++){
+//     const tooltip = new Tooltip(document.querySelectorAll('.tooltip')[i]);
+//     tooltip.init()
+// }
 
