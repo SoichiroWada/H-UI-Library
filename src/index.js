@@ -22,8 +22,6 @@ dropdowns.forEach(dropdown => {
 // create tabs
 const container = document.querySelector('.tabs');
 console.log('container:', container)
-const elements = container.querySelectorAll('.trigger');
-console.log('elements:', elements)
 
 const tabs = new Tabs(container);
 tabs.init();
