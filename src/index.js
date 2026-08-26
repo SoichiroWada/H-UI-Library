@@ -3,7 +3,7 @@ import Dropdown from './ninja-ui/dropdown';
 
 // create tooltips
 const tooltips = document.querySelectorAll('.tooltip');
-console.log(tooltips);
+console.log("tooltips:", tooltips);
 
 tooltips.forEach((tip) => {
   const tooltip = new Tooltip(tip)
