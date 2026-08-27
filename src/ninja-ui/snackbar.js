@@ -5,7 +5,7 @@ class Snackbar {
         this.snackbar = document.createElement('div');
     }
     init() {
-        this.snackbar.classList.add('snacbar');
+        this.snackbar.classList.add('snackbar');
         document.querySelector('body').appendChild(this.snackbar);
     }
     show(message) {
